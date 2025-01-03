@@ -12,7 +12,6 @@ import javax.annotation.PostConstruct;
 import javax.net.ssl.SSLContext;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.http.conn.ssl.NoopHostnameVerifier;
 import org.apache.http.conn.ssl.SSLConnectionSocketFactory;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.impl.client.HttpClients;
