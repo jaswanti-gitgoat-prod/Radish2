@@ -177,7 +177,6 @@ public class ProxyRequestHandler {
 class Bad {
     public void bad_disable_old_tls1() {
         //ruleid: disallow-old-tls-versions1
-        SSLConnectionSocketFactory sf = new SSLConnectionSocketFactory(
                 sslContext,
                 new String[] {"TLSv1", "TLSv1.1", "TLSv1.2"},
                 null,
