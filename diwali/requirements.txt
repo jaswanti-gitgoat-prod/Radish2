@@ -17,5 +17,4 @@ python-magic
 pyarrow==7.0.0
 fastparquet==0.8.0
 #Werkzeug==2.2.2
-pygit2==1.10.1
 langchain==0.0.268
