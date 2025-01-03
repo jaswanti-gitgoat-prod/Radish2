@@ -10,7 +10,6 @@ class ConnectionHandler:
         if pat is not None:
             self.headers['Authorization'] = Config.generate_auth_header(pat)
     async def get(self, endpoint):
-        resp = requests.get(self.base_url + endpoint, headers=self.headers, verify=False)
         if resp.status_code != 200:
             logging.warning(f'The response code for the GET endpoint {endpoint} is {resp.status_code}. Message: {resp.text}')
             await self.__validate_rate_limit(resp)
