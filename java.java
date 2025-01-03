@@ -182,7 +182,6 @@ class Bad {
 
     public void bad_disable_old_tls2() {
         //ruleid: disallow-old-tls-versions1
-        SSLConnectionSocketFactory sf = new SSLConnectionSocketFactory(
                 sslContext,
                 null,
                 SSLConnectionSocketFactory.BROWSER_COMPATIBLE_HOSTNAME_VERIFIER);
